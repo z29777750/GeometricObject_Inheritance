@@ -1,0 +1,30 @@
+from Circle import Circle
+from Rectangle import Rectangle
+
+r=int(input()) 
+w=int(input())
+h=int(input())
+c1=input()
+f1=input()
+c2=input()
+f2=input()
+
+circle = Circle(r) 
+circle.setColor(c1)
+circle.setFilled(f1)
+print("Circle: ")
+print("Radius is ", circle.getRadius())
+print("Diameter is ", circle.getDiameter())
+print("Area is ", circle.getArea())
+print("Perimeter is ", circle.getPerimeter())
+print(circle)
+    
+rectangle = Rectangle(w, h)
+rectangle.setColor(c2)
+rectangle.setFilled(f2)
+print("Rectangle: ")
+print("Width is ", rectangle.getWidth())
+print("Height is ", rectangle.getHeight())
+print("Area is ", rectangle.getArea())
+print("Perimeter is ", rectangle.getPerimeter())
+print(rectangle)
